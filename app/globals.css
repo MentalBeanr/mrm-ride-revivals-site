@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%; /* Darker Black for deeper contrast */
+    --foreground: 0 0% 98%; /* White */
+
+    --card: 0 0% 10%; /* Slightly lighter black for cards */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 84.2% 60.2%; /* A vibrant Red (e.g., #FF0000) */
+    --primary-foreground: 0 0% 98%; /* White for text on red buttons */
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 20%; /* Muted slightly lighter */
+    --muted-foreground: 0 0% 70%; /* Muted foreground slightly lighter */
+
+    --accent: 0 84.2% 60.2%; /* Red as accent */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 25%; /* Slightly more visible border */
+    --input: 0 0% 14.9%;
+    --ring: 0 84.2% 60.2%; /* Red for rings */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Ensure dark theme variables are identical if only one theme is used */
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 84.2% 60.2%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 84.2% 60.2%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 14.9%;
+    --ring: 0 84.2% 60.2%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans), sans-serif;
+  }
+}
