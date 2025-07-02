@@ -16,40 +16,42 @@ export const metadata: Metadata = {
   generator: 'v0.dev'
 }
 
-export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
-  children: React.ReactNode
+export function RootLayout({
+                               children,
+                           }: Readonly<{
+    children: React.ReactNode
 }>) {
-  return (
-      <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* --- 2. ADD GOOGLE TAGS HERE --- */}
-        <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-2487W0WL38"
-        />
-        <Script id="google-analytics">
-          {`
+    let html = <>
+        <html lang="en" suppressHydrationWarning>
+        <head>
+            <
+            !-- Google tag (gtag.js) --&gt;
+            <Script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=G-2487W0WL38"
+            />
+            <Script id="google-analytics">
+                {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-2487W0WL38');
           `}
-        </Script>
-      </head>
-      <body className={`${inter.variable} ${orbitron.variable} font-sans antialiased`}>
-      {" "}
-      {/* Added Orbitron variable */}
-      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
-        <div className="flex flex-col min-h-screen bg-background">
-          <Header />
-          <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
-          <Footer />
-        </div>
-      </ThemeProvider>
-      </body>
-      </html>
-  )
+            </Script>
+        </head>
+        <body className={`${inter.variable} ${orbitron.variable} font-sans antialiased`}>
+        {" "}
+        {/* Added Orbitron variable */}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
+            <div className="flex flex-col min-h-screen bg-background">
+                <Header/>
+                <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+                <Footer/>
+            </div>
+        </ThemeProvider>
+        </body>
+        </html>
+    </>;
+    return html
 }
