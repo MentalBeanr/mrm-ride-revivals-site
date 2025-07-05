@@ -2,8 +2,7 @@ import Script from 'next/script';
 
 export default function BookNowPage() {
       return (
-          <div>
-                {/* Wrapper for the heading and description */}
+          <>
                 <div className="text-center mb-8">
                       <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary">
                             Book Your Detailing Appointment
@@ -13,9 +12,9 @@ export default function BookNowPage() {
                       </p>
                 </div>
 
-                {/* --- Square Appointments Widget Script --- */}
-                <Script src="https://app.squareup.com/appointments/buyer/widget/98sriyfydm23zn/L1Z4B515J0VKD.js" />
-
-          </div>
+                <div className="min-h-[700px]">
+                      <Script src="https://app.squareup.com/appointments/buyer/widget/98sriyfydm23zn/L1Z4B515J0VKD.js" />
+                </div>
+          </>
       );
 }
