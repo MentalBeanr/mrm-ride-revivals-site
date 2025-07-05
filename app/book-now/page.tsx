@@ -34,7 +34,7 @@ export default function BookNowPage(): JSX.Element {
             <div className="min-h-[300px]"></div>
 
             {/* Square embed script */}
-            <Script src="https://app.squareup.com/appointments/buyer/widget/98srivfydm23zn/L174B515J0VKD.js" />
+            <Script src="https://app.squareup.com/appointments/buyer/widget/98srivfydm23zn/L1Z4B515J0VKD.js" />
         </>
     );
 }
