@@ -1,6 +1,4 @@
-import Script from 'next/script';
-
-export default function BookNowPage() {
+export default function BookNowPage(): JSX.Element {
     return (
         <>
             <div className="text-center mb-8">
@@ -13,8 +11,12 @@ export default function BookNowPage() {
                 </p>
             </div>
 
-            <div style={{ minHeight: '750px' }}>
-                <Script src="https://app.squareup.com/appointments/buyer/widget/98sriyfydm23zn/L1Z4B515J0VKD.js" />
+            <div className="w-full min-h-[1000px]">
+                <iframe
+                    src="https://squareup.com/appointments/book/98srivfydm23zn/L174B515J0VKD"
+                    className="w-full h-[1000px] border-none"
+                    title="Booking Calendar"
+                ></iframe>
             </div>
         </>
     );
