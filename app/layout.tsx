@@ -1,7 +1,5 @@
-'use client';
-
 import type React from "react"
-import { usePathname } from 'next/navigation';
+import type { Metadata } from "next"
 import { Inter, Orbitron } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
@@ -12,17 +10,26 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700", "900"], variable: "--font-orbitron" })
 
+export const metadata: Metadata = {
+    title: "MRM Ride Revivals - Premium Car Detailing",
+    description: "Expert car detailing services to revive your ride. Book your appointment today!",
+    generator: 'v0.dev',
+    manifest: "/site.webmanifest",
+    icons: {
+        icon: "/favicon.ico",
+        apple: "/apple-touch-icon.png",
+    },
+};
+
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode
 }>) {
-    const pathname = usePathname();
-    const isBookNowPage = pathname === '/book-now';
-
     return (
         <html lang="en" suppressHydrationWarning>
         <head>
+            {/* Google Analytics Script */}
             <Script
                 async
                 src="https://www.googletagmanager.com/gtag/js?id=G-2487W0WL38"
@@ -40,13 +47,11 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
             <div className="flex flex-col min-h-screen bg-background">
                 <Header />
-                <main className={isBookNowPage ? "container mx-auto px-4 py-8" : "flex-grow container mx-auto px-4 py-8"}>
-                    {children}
-                </main>
+                <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
                 <Footer />
             </div>
         </ThemeProvider>
         </body>
         </html>
-    );
+    )
 }
