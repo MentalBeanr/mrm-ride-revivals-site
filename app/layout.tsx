@@ -13,7 +13,7 @@ const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700", "900"], v
 export const metadata: Metadata = {
     title: "MRM Ride Revivals - Premium Car Detailing",
     description: "Expert car detailing services to revive your ride. Book your appointment today!",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
     manifest: "/site.webmanifest",
     icons: {
         icon: [
