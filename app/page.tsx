@@ -10,15 +10,7 @@ export default function HomePage() {
       {/* Hero Section with Logo Background */}
       <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/mrm-logo.png"
-            alt="MRM Ride Revivals Background"
-            fill
-            className="object-contain opacity-10 scale-150"
-            priority
-          />
-        </div>
+
 
         {/* Video Background (keeping the bubbles effect) */}
         <video
@@ -29,12 +21,12 @@ export default function HomePage() {
           className="absolute top-0 left-0 w-full h-full object-cover z-5 opacity-30"
           poster="/placeholder.svg?width=1920&height=1080&text=Loading+Video..."
         >
-          <source src=/videos/ferrari_background.mp4" type="video/mp4" />
+          <source src= "/videos/ferrari_background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Dark overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-10" />
+
 
         {/* Content */}
         <div className="relative z-20 container px-4 md:px-6">
