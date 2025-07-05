@@ -20,10 +20,10 @@ export default function RootLayout({
     const pathname = usePathname();
     const isBookNowPage = pathname === '/book-now';
 
-    // This logic changes the classes for the <main> element based on the page
+    // This logic now ONLY removes the flex-grow class on the book-now page
     const mainClass = isBookNowPage
-        ? "container mx-auto px-4 py-8 bg-white rounded-lg my-8" // Use these classes for the Book Now page
-        : "flex-grow container mx-auto px-4 py-8"; // Use these classes for all other pages
+        ? "container mx-auto px-4 py-8" // Classes for the Book Now page
+        : "flex-grow container mx-auto px-4 py-8"; // Classes for all other pages
 
     return (
         <html lang="en" suppressHydrationWarning>
