@@ -29,7 +29,7 @@ export default function HomePage() {
           className="absolute top-0 left-0 w-full h-full object-cover z-5 opacity-30"
           poster="/placeholder.svg?width=1920&height=1080&text=Loading+Video..."
         >
-          <source src="https://videos.pexels.com/video-files/4784283/4784283-hd_1920_1080_25fps.mp4" type="video/mp4" />
+          <source src=/videos/ferrari_background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
