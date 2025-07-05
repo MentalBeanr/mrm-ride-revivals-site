@@ -5,13 +5,13 @@ import { useEffect } from 'react';
 
 export default function BookNowPage(): JSX.Element {
     useEffect(() => {
-        // Scroll to bottom after delay to bring embedded widget into view
+        // Scroll to booking widget if it loads
         const timeout = setTimeout(() => {
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth',
-            });
-        }, 3000); // Adjust if widget loads faster/slower
+            const widget = document.getElementById("square-appointments-root");
+            if (widget) {
+                widget.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 3000); // Adjust delay if needed
 
         return () => clearTimeout(timeout);
     }, []);
@@ -30,12 +30,13 @@ export default function BookNowPage(): JSX.Element {
                 </p>
             </div>
 
-            {/* Spacer to prevent empty screen while widget loads */}
-            <div className="min-h-[300px]"></div>
+            {/* Container for the injected Square content */}
+            <div id="square-appointments-root" className="min-h-[1000px]" />
 
             {/* Square embed script */}
             <Script src="https://app.squareup.com/appointments/buyer/widget/98srivfydm23zn/L1Z4B515J0VKD.js" />
         </>
     );
 }
+
 
