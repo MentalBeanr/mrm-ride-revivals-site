@@ -12,12 +12,11 @@ export default function BookNowPage() {
                 </p>
             </div>
 
-            {/* This div provides a container and prevents the footer from jumping up */}
             <div style={{ minHeight: '750px' }}>
-                <Script src="https://app.squareup.com/appointments/buyer/widget/98sriyfydm23zn/L1Z4B515J0VKD.js" />
+                {/* Using the new script URL you provided */}
+                <Script src="https://square.site/appointments/buyer/widget/1fo0tnot1ywy3q/L1Z4B515J0VKD.js" />
             </div>
         </>
     );
 }
-
 
