@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 export default function BookNowPage() {
     return (
         <>
@@ -12,10 +10,8 @@ export default function BookNowPage() {
                 </p>
             </div>
 
-            <div style={{ minHeight: '750px' }}>
-                {/* Using the new script URL you provided */}
-                <Script src="https://square.site/appointments/buyer/widget/1fo0tnot1ywy3q/L1Z4B515J0VKD.js" />
-            </div>
+            {/* The Square Appointments widget has been removed. */}
+            {/* You can add new content for this page here. */}
         </>
     );
 }
