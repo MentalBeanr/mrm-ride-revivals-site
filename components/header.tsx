@@ -25,7 +25,7 @@ export default function Header() {
         <div className="container flex h-20 max-w-screen-2xl items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-                src="/images/mrm-logo-red.png" // Changed to your new logo
+                src="/images/mrm_logo_written.png" // Changed to your new logo
                 alt="MRM Ride Revivals Logo"
                 width={120}
                 height={60}
