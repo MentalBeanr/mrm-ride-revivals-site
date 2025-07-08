@@ -8,12 +8,12 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 
-// Changed "About Us" to "Contact Us"
+// The order of the links in this array has been changed
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/pricing", label: "Pricing & Services" },
   { href: "/book-now", label: "Book Now" },
-  { href: "/about-us", label: "Contact Us" }, // Changed the label here
+  { href: "/about-us", label: "Contact Us" },
   { href: "/reviews", label: "Reviews" },
 ]
 
@@ -25,7 +25,7 @@ export default function Header() {
         <div className="container flex h-20 max-w-screen-2xl items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-                src="/images/mrm-logo.png"
+                src="/images/mrm-logo-red.png" // Changed to your new logo
                 alt="MRM Ride Revivals Logo"
                 width={120}
                 height={60}
@@ -65,7 +65,7 @@ export default function Header() {
                 <div className="mb-6">
                   <Link href="/" className="flex items-center">
                     <Image
-                        src="/images/mrm-logo.png"
+                        src="/images/mrm-logo-red.png" // Also changed here for the mobile menu
                         alt="MRM Ride Revivals Logo"
                         width={100}
                         height={50}
