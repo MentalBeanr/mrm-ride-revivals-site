@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Script from "next/script";
 
 export default function ReviewsPage() {
   return (
@@ -18,12 +19,9 @@ export default function ReviewsPage() {
               <CardTitle>Our Google Reviews</CardTitle>
             </CardHeader>
             <CardContent>
-              {/*
-                <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-54fb78fa-1c36-483c-8792-2e2ee824b128" data-elfsight-app-lazy></div>
-            */}
-
+              {/* The Elfsight widget code you provided has been placed here */}
+              <Script src="https://static.elfsight.com/platform/platform.js" strategy="lazyOnload" />
+              <div className="elfsight-app-54fb78fa-1c36-483c-8792-2e2ee824b128" data-elfsight-app-lazy></div>
             </CardContent>
           </Card>
         </section>
