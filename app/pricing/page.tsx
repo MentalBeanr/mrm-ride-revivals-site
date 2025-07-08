@@ -6,7 +6,7 @@ import Link from "next/link"
 const pricingTiers = [
   {
     name: "Interior Revival",
-    price: "$50 - $150",
+    price: "$50 - $100",
     description: "Deep clean and rejuvenation for your vehicle's interior.",
     features: [
       "Deep Interior Vacuum (Incl. Trunk)",
@@ -21,7 +21,7 @@ const pricingTiers = [
   },
   {
     name: "Exterior Excellence",
-    price: "$50 - $150",
+    price: "$50 - $100",
     description: "Comprehensive exterior detailing for a showroom shine.",
     features: [
       "Exterior Hand Wash & Dry",
@@ -35,7 +35,7 @@ const pricingTiers = [
   },
   {
     name: "The Full Revival",
-    price: "$150 - $250",
+    price: "$100 - $150",
     description: "The ultimate package for a complete vehicle transformation, inside and out.",
     features: [
       "Includes ALL standard Interior Revival services",

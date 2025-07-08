@@ -11,8 +11,8 @@ import Image from "next/image"
 // Changed "About Us" to "Contact Us"
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/book-now", label: "Book Now" },
   { href: "/pricing", label: "Pricing & Services" },
+  { href: "/book-now", label: "Book Now" },
   { href: "/about-us", label: "Contact Us" }, // Changed the label here
   { href: "/reviews", label: "Reviews" },
 ]
