@@ -27,9 +27,9 @@ export default function Header() {
             <Image
                 src="/images/mrm_logo_written.png" // Changed to your new logo
                 alt="MRM Ride Revivals Logo"
-                width={120}
-                height={60}
-                className="h-12 w-auto hover:opacity-80 transition-opacity"
+                width={480}
+                height={240}
+                className="h-32 w-auto hover:opacity-80 transition-opacity"
                 priority
             />
           </Link>
@@ -67,9 +67,9 @@ export default function Header() {
                     <Image
                         src="/images/mrm-logo-red.png" // Also changed here for the mobile menu
                         alt="MRM Ride Revivals Logo"
-                        width={100}
-                        height={50}
-                        className="h-10 w-auto"
+                        width={240}
+                        height={120}
+                        className="h-24 w-auto"
                     />
                   </Link>
                 </div>
