@@ -9,10 +9,7 @@ export default function HomePage() {
     <div className="flex flex-col items-center text-center space-y-12">
       {/* Hero Section with Logo Background */}
       <section className="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center overflow-hidden">
-        {/* Background Image */}
 
-
-        {/* Video Background (keeping the bubbles effect) */}
         <video
           autoPlay
           loop
@@ -22,10 +19,8 @@ export default function HomePage() {
           poster="/placeholder.svg?width=1920&height=1080&text=Loading+Video..."
         >
           <source src= "/videos/ferrari_background.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
 
-        {/* Dark overlay */}
 
 
         {/* Content */}
