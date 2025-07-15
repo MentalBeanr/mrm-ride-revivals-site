@@ -6,7 +6,7 @@ import Link from "next/link"
 const pricingTiers = [
   {
     name: "Interior Revival",
-    price: "$50 - $15giut0",
+    price: "$50 - $150",
     description: "Deep clean and rejuvenation for your vehicle's interior.",
     features: [
       "Deep Interior Vacuum (Incl. Trunk)",
